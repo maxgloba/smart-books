@@ -1,5 +1,5 @@
 # Server file
-# .htaccess
+.htaccess
 
 # Dev filder
 node_modules/
@@ -12,7 +12,7 @@ node_modules/
 
 # WordPress ignores
 # wp-content/plugins/
-# wp-config.php
+wp-config.php
 
 # Add rules from terminal
 # git update-index --skip-worktree -- wp-config.php

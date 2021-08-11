@@ -1,0 +1,56 @@
+.btn{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px;
+  display: block;
+  box-sizing: border-box;
+  transition: .3s ease;
+  padding: 15px 15px;
+  // width: 100%;
+  border-radius: 30px;
+  @media(min-width:992px){
+    font-size: 15px;
+  }
+  @media(min-width:1200px){
+    font-size: 18px;
+  }
+  &-more{
+    background-color: $white;
+    color: $dark;
+    border: 1px solid $dark;
+  }
+  &-add{
+    background: linear-gradient(to right, #f798fe, #a000ac);
+    color: $white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+  &:hover{
+    background-color: $dark;
+    border-color: $dark;
+    color: $white;
+  }
+  &-link{
+    background-color: transparent;
+    border: none;
+    color: $gray;
+    text-decoration: underline !important;
+    font-size: 14px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    &:hover{
+      background-color: transparent;
+      color: $gray;
+      text-decoration: none !important;
+    }
+  }
+  &-continue{
+    border: 1px solid $dark;
+    background: none;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,119 @@
+.product{
+  text-align: center;
+  margin: 30px auto;
+  h4{
+    margin-bottom: 2px;
+    a{
+      color: $dark;
+      font-size: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      @media(min-width:768px){
+        font-size: 30px;
+      }
+    }
+  }
+  &-desc{
+    color: $gray;
+    font-size: 14px;
+    margin-bottom: 5px;
+    @media(min-width:768px){
+      font-size: 16px;
+    }
+  }
+  .price{
+    color: $dark;
+    font-size: 30px;
+    font-weight: 700;
+    @media(min-width:768px){
+      font-size: 40px;
+    }
+    & > span{
+      font-size: 50%;
+    }
+    &-old{
+      color: $red;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 25px;
+      position: relative;
+      & > span{
+        font-size: 70%;
+      }
+      &:before{
+        content:"";
+        height: 2px;
+        width: 100%;
+        background: $red;
+        position: absolute;
+        left: 0; top: 50%;
+        transform: translate(0, 2px);
+      }
+    }
+    &-wrap{
+      margin-bottom: 0;
+    }
+    &-sale{
+      background: #e74c3c;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      line-height: 12px;
+      margin-left: 10px;
+      margin-top: -5px;
+      padding: 4px 7px;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 5px;
+      &:before {
+        border-color: transparent #e74c3c transparent transparent;
+        border-style: solid;
+        border-width: 10px 10px 10px 0;
+        content: '';
+        display: block;
+        height: 0;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(-7px, -50%);
+        width: 0;
+        transition: all .2s linear;
+      }
+    }
+  }
+  .btn{
+    width: calc(100% - 60px);
+    margin-left: auto;
+    margin-right: auto;
+    &-add{
+      padding: 20px 0;
+      border-radius: 30px;
+      font-size: 18px;
+    }
+  }
+  &-inner{
+    background: #fff;
+    box-shadow: 0 0 4px rgba($dark, .5);
+    padding: 30px 15px;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    transition: padding 1s ease;
+  }
+  &-img{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    img{
+      display: block;
+    }
+  }
+  &:nth-child(2n){
+    .btn-add{ background: linear-gradient(left,#ffe712, $orange) }
+  }
+  &:nth-child(3n){
+    .btn-add{ background: linear-gradient(left, #7ed4ff, $blue) }
+  }
+}
